@@ -3,6 +3,8 @@ let tarjeta1 = null;
 let tarjeta2 = null;
 let primeraEleccion = null;
 let segundaEleccion = null;
+let intentos = 0;
+let mostrarintentos = document.getElementById('intentos');
 
 
 let numeros = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7 , 8, 8];
@@ -27,5 +29,6 @@ function mostrar(id) {
         segundaEleccion = numeros[id];
 
         tarjeta2.disabled = true;
+        intentos++;
     }
 }
